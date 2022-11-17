@@ -1,0 +1,60 @@
+
+body{
+	box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+
+}
+*,
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+}
+.container{
+  max-width:1440px;
+  height: auto;
+  margin: auto;
+   
+  
+}
+
+.btn{
+  background-color: #FF4D01;
+  color: white;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  width: 169px;
+  height: 75px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  &:hover{
+    background:none;
+    border: 1px solid #ffff;
+  }
+  border:none;
+}
+.btn_small{
+  width: 129px;
+  height: 54px;
+}
+.partition {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height:110%;
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  color: #FF4D01;
+}
+@import "_header.scss";
+@import "_intro.scss";
+@import "_AboutUs.scss";

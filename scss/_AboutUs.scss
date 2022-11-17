@@ -1,0 +1,164 @@
+.AboutUs {
+margin-top:100px;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+
+
+.AboutUs_inner {
+  display: flex;
+}
+.AboutUs_Group {
+  &:nth-child(1){
+  width: 40%;
+  padding-left: 30px;
+  text-align: center;
+
+}
+&:nth-child(2){
+  width: 60%;
+  padding-top:40px;
+  
+  padding-left: 5%;
+
+  
+}
+
+}
+
+.AboutUs_title {
+  font-size: 54px;
+  line-height: 115%;
+  padding-right:31%;
+}
+.AboutUs_subtitle {
+  font-size: 18px;
+  line-height: 167%;
+  color: #605E5D;
+  padding: 19px 0 50px 0 ;
+  padding-right: 25%;
+}
+.AboutUs_Date_Container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 35%;
+}
+.AboutUs_Date_item {
+  
+  text-align: center;
+}
+.AboutUs_Date_title {
+  font-size: 72px;
+  line-height: 117%;
+  & span{
+    color: #FF4D01;
+  }
+}
+.AboutUs_Date_subtitle {
+  font-size: 18px;
+  line-height: 111%;
+  color: #989899;
+  margin-bottom: 85px;
+}
+.btn_longer {
+  width:237px;
+  border:1px solid rgb(0, 0, 0);
+  color:rgb(0, 0, 0);
+  background:none;
+  font-size: 18px;
+  line-height: 111%;
+  &:hover{
+    background-color: #FF4D01;
+    color:white;
+  }
+}
+
+}
+
+@media screen and (max-width:1400px) {
+  .AboutUs {
+
+  .AboutUs_inner {
+  }
+  .AboutUs_Group {
+  }
+  .partition {
+    font-size: 1.49vw;
+  }
+  .AboutUs_title {
+        font-size: 4vw;
+  }
+  .AboutUs_subtitle {
+    font-size: 1.38vw;
+  }
+  .AboutUs_Date_Container {
+  }
+  .AboutUs_Date_item {
+  }
+  .AboutUs_Date_title {
+
+    font-size: 5vw;
+  }
+  .AboutUs_Date_subtitle {
+  }
+  .btn {
+  }
+  .btn_longer {
+  }
+}
+}
+@media screen and (max-width:768px) {
+  .AboutUs {
+
+    .AboutUs_inner {
+    }
+    .AboutUs_Group {
+    }
+    .partition {
+    }
+    .AboutUs_title {
+    }
+    .AboutUs_subtitle {
+    }
+    .AboutUs_Date_Container {
+    }
+    .AboutUs_Date_item {
+    }
+    .AboutUs_Date_title {
+      font-size: 6vw;
+    }
+    .AboutUs_Date_subtitle {
+    }
+    .btn {
+    }
+    .btn_longer {
+    }
+  }
+}
+@media screen and (max-width:381px) {
+  .AboutUs {
+
+    .AboutUs_inner {
+    }
+    .AboutUs_Group {
+    }
+    .partition {
+    }
+    .AboutUs_title {
+    }
+    .AboutUs_subtitle {
+    }
+    .AboutUs_Date_Container {
+    }
+    .AboutUs_Date_item {
+    }
+    .AboutUs_Date_title {
+    }
+    .AboutUs_Date_subtitle {
+    }
+    .btn {
+    }
+    .btn_longer {
+    }
+  }
+}

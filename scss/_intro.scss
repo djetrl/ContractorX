@@ -1,0 +1,108 @@
+.intro {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  color:White;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  background-image: url(img/intro/intro_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+.intro_inner {
+  position: relative;
+  padding-top: 69px;
+  margin: 0 20%;
+  text-align: center;
+}
+.title {
+  padding-top: 182px;
+  font-size: 72px;
+
+}
+.sub_title {
+  font-size: 18px;
+  margin: 35px 0;
+}
+.intro_btn {
+ 
+}
+.btn {
+
+  &:nth-child(2){
+    margin-left: 28px;
+  }
+  margin-bottom: 300px;
+
+}
+
+}
+
+    @media screen and (max-width:1065px) {
+
+      .intro {
+        
+      .title {
+        padding-top: 17vw;
+        font-size: 6.7vw;
+      }
+      .sub_title {
+        font-size: 1.6vw;
+  
+      }
+
+      .btn {
+        width: 16vw;
+        height: 7vw;
+        &:nth-child(2){
+          margin-left: 28px;
+        }
+      }
+
+      }
+      .intro {
+        background-image: url(img/intro/intro_img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+    }
+    @media screen and (max-width:768px) {
+      .intro{
+        .sub_title {
+          font-size: 2vw;
+    
+        }
+        .btn{
+          font-size: 2.4vw;
+          margin-bottom: 25vw;
+          &:nth-child(2){
+            margin-left: 28px;
+          }
+        }
+
+    }
+    }
+    @media screen and (max-width:381px) {
+      .intro{
+        .title{
+          font-size: 8.7vw;
+          padding-top: 23vw;
+        }
+        .sub_title{
+          font-size: 3vw;
+        }
+        .btn{
+          width: 21vw;
+          height: 10vw;
+          margin-bottom: 30vw;
+          font-size: 3vw;
+        }
+        .intro_inner{
+          margin: 0 10%;
+        }
+      }
+    }
