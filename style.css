@@ -350,6 +350,9 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
+  .AboutUs .AboutUs_Group:nth-child(1) img {
+    width: 35.1vw;
+  }
   .AboutUs .partition {
     font-size: 1.49vw;
   }
@@ -357,14 +360,74 @@ body {
     font-size: 4vw;
   }
   .AboutUs .AboutUs_subtitle {
-    font-size: 1.38vw;
+    font-size: 1.285712vw;
+    padding: 19px 0 5vw 0;
   }
   .AboutUs .AboutUs_Date_title {
-    font-size: 5vw;
+    font-size: 4vw;
+  }
+  .AboutUs .AboutUs_Date_subtitle {
+    font-size: 1.285712vw;
+    margin-bottom: 6.07143vw;
+  }
+  .AboutUs .btn_longer {
+    font-size: 1.285712vw;
+    width: 16.9295VW;
+    height: 5.3589vw;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  .AboutUs {
+    margin-top: 7.321vw;
+  }
+  .AboutUs .AboutUs_inner {
+    display: block;
+    text-align: center;
+  }
+  .AboutUs .AboutUs_Group:nth-child(1), .AboutUs .AboutUs_Group:nth-child(2) {
+    width: 100%;
+    padding: 0;
+  }
+  .AboutUs .AboutUs_title {
+    padding: 0 20%;
+    font-size: 5vw;
+  }
+  .AboutUs .AboutUs_subtitle {
+    padding: 19px 5% 5vw 5%;
+    font-size: 2.5vw;
+  }
+  .AboutUs .AboutUs_Date_Container {
+    padding: 0 20%;
+  }
   .AboutUs .AboutUs_Date_title {
     font-size: 6vw;
+  }
+  .AboutUs .AboutUs_Date_subtitle {
+    font-size: 2vw;
+  }
+  .AboutUs .btn_longer {
+    font-size: 2vw;
+    width: 20vw;
+    height: 6vw;
+  }
+}
+@media screen and (max-width: 381px) {
+  .AboutUs .AboutUs_Group:nth-child(1) img {
+    width: 40vw;
+  }
+  .AboutUs .partition {
+    font-size: 2.5vw;
+  }
+  .AboutUs .AboutUs_title {
+    padding: 0 10%;
+    font-size: 7vw;
+  }
+  .AboutUs .AboutUs_subtitle {
+    font-size: 3vw;
+  }
+  .AboutUs .btn_longer {
+    font-size: 3vw;
+    width: 35vw;
+    height: 10vw;
   }
 }

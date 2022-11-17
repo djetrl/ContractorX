@@ -77,10 +77,12 @@ font-weight: 400;
 
 @media screen and (max-width:1400px) {
   .AboutUs {
-
-  .AboutUs_inner {
-  }
   .AboutUs_Group {
+    &:nth-child(1){
+      img{
+      width: 35.1vw;
+      }
+    }
   }
   .partition {
     font-size: 1.49vw;
@@ -89,49 +91,63 @@ font-weight: 400;
         font-size: 4vw;
   }
   .AboutUs_subtitle {
-    font-size: 1.38vw;
-  }
-  .AboutUs_Date_Container {
-  }
-  .AboutUs_Date_item {
+    font-size: 1.285712vw;
+    padding: 19px 0 5vw 0;
   }
   .AboutUs_Date_title {
 
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .AboutUs_Date_subtitle {
+    font-size: 1.285712vw;
+    margin-bottom: 6.07143vw;
+
   }
   .btn {
   }
   .btn_longer {
+    font-size: 1.285712vw;
+    width: 16.9295VW;
+    height: 5.3589vw;
   }
 }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
   .AboutUs {
-
+    margin-top: 7.321vw;
     .AboutUs_inner {
+      
+    display: block;
+    text-align: center;
+
     }
     .AboutUs_Group {
-    }
-    .partition {
+      &:nth-child(1),&:nth-child(2){
+        width: 100%;
+        padding:0;
+      }
     }
     .AboutUs_title {
+      padding: 0 20%;
+      font-size: 5vw;
     }
     .AboutUs_subtitle {
+      padding: 19px 5% 5vw 5%;
+      font-size: 2.5vw;
     }
     .AboutUs_Date_Container {
-    }
-    .AboutUs_Date_item {
+      padding: 0 20%;
     }
     .AboutUs_Date_title {
       font-size: 6vw;
     }
     .AboutUs_Date_subtitle {
-    }
-    .btn {
+      font-size: 2vw;
     }
     .btn_longer {
+      font-size: 2vw;
+      width: 20vw;
+      height: 6vw;
     }
   }
 }
@@ -141,12 +157,21 @@ font-weight: 400;
     .AboutUs_inner {
     }
     .AboutUs_Group {
+      &:nth-child(1){
+     img{
+      width: 40vw;
+     }
+      }
     }
     .partition {
+      font-size: 2.5vw;
     }
     .AboutUs_title {
+      padding: 0 10%;
+      font-size: 7vw;
     }
     .AboutUs_subtitle {
+      font-size: 3vw;
     }
     .AboutUs_Date_Container {
     }
@@ -156,9 +181,10 @@ font-weight: 400;
     }
     .AboutUs_Date_subtitle {
     }
-    .btn {
-    }
     .btn_longer {
+      font-size: 3vw;
+      width: 35vw;
+      height: 10vw;
     }
   }
 }
