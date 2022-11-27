@@ -55,6 +55,25 @@ body{
 
   color: #FF4D01;
 }
+.partition {
+  font-size: 1.49vw;
+}
+.btn_longer {
+  width:237px;
+  border:1px solid rgb(0, 0, 0);
+  color:rgb(0, 0, 0);
+  background:none;
+  font-size: 18px;
+  line-height: 111%;
+  &:hover{
+    background-color: #FF4D01;
+    color:white;
+  }
+}
+.btn_height_low{
+ height: 70px;
+}
 @import "_header.scss";
 @import "_intro.scss";
 @import "_AboutUs.scss";
+@import "_OurServices.scss";

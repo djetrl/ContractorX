@@ -60,18 +60,7 @@ font-weight: 400;
   color: #989899;
   margin-bottom: 85px;
 }
-.btn_longer {
-  width:237px;
-  border:1px solid rgb(0, 0, 0);
-  color:rgb(0, 0, 0);
-  background:none;
-  font-size: 18px;
-  line-height: 111%;
-  &:hover{
-    background-color: #FF4D01;
-    color:white;
-  }
-}
+
 
 }
 
@@ -92,7 +81,7 @@ font-weight: 400;
   }
   .AboutUs_subtitle {
     font-size: 1.285712vw;
-    padding: 19px 0 5vw 0;
+    padding: 19px 6vw 5vw 0;
   }
   .AboutUs_Date_title {
 
@@ -146,8 +135,8 @@ font-weight: 400;
     }
     .btn_longer {
       font-size: 2vw;
-      width: 20vw;
-      height: 6vw;
+      width: 22vw;
+      height: 8vw;
     }
   }
 }
@@ -172,14 +161,6 @@ font-weight: 400;
     }
     .AboutUs_subtitle {
       font-size: 3vw;
-    }
-    .AboutUs_Date_Container {
-    }
-    .AboutUs_Date_item {
-    }
-    .AboutUs_Date_title {
-    }
-    .AboutUs_Date_subtitle {
     }
     .btn_longer {
       font-size: 3vw;
