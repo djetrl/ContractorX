@@ -57,11 +57,8 @@
   
   }
 }
-.card_item{
-  &:hover{
-    background: none;
-    color: #FF4D01;
-  }
+#card_item{
+  cursor: pointer;
 }
 .menu {
 
@@ -121,7 +118,9 @@ li{
 
 @media screen and (max-width:768px) {
   .navbar {
+    position: fixed;
     .navbar_wrap{
+    
       float: none;
       background-color:#FF4D01;
     }
