@@ -1,0 +1,106 @@
+.trigger {
+
+.trigger_inner {
+  font-weight: 400;
+}
+.tigger_img {
+  max-width: 100%;
+  position: absolute;
+}
+.trigger_content {
+  position: relative;
+  padding: 8.6% 45% 8.6% 10.5%;
+}
+.trigger_title {
+  font-size: 54px;
+  line-height: 115%;
+}
+.trigger_subtitle {
+  font-size: 18px;
+  line-height: 167%;
+  margin: 20px 0;
+}
+.trigger_btns {
+}
+.btn {
+  width: 180px;
+  height: 75px;
+  margin-right: 20px;
+  &:hover{
+    border:1px solid black;
+    color:black;
+  }
+}
+
+}
+
+// media adaptation
+
+@media screen and (max-width:1065px) {
+  .trigger {
+    .tigger_img {
+
+
+    }
+    .trigger_content {
+      padding: 8.6% 45% 8.6% 10.5%;
+    }
+    .trigger_title {
+      font-size: 4vw;
+    }
+    .trigger_subtitle {
+      font-size: 1.3vw;
+      margin: 1.88vw 0;
+    }
+    .trigger_btns {
+    }
+    .btn {
+      font-size: 1.5vw;
+      width: 16.90vw;
+      height: 7.04vw;
+      margin-right: 1.88vw;
+      &:hover{
+        border:1px solid black;
+        color:black;
+      }
+    }
+    
+    }
+}
+@media screen and (max-width:800px) {
+  .trigger {
+    .tigger_img {
+
+
+    }
+    .trigger_content {
+
+      padding: 6% 45% 8.6% 10.5%;
+    }
+    .trigger_title {
+      font-size: 4vw;
+    }
+    .trigger_subtitle {
+      font-size: 2vw;
+      margin: 1.88vw 0;
+      font-weight: bold;
+    }
+    .trigger_btns {
+    }
+    .btn {
+      font-size: 2vw;
+      width: 16.90vw;
+      height: 7.04vw;
+      margin-right: 1.88vw;
+      &:hover{
+        border:1px solid black;
+        color:black;
+      }
+    }
+    
+    }
+}
+
+@media screen and (max-width:381px) {
+ 
+}

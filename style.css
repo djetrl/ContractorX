@@ -60,15 +60,14 @@ body {
 
 .btn_longer {
   width: 237px;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-  background: none;
+  color: white;
+  background-color: #FF4D01;
   font-size: 18px;
   line-height: 111%;
 }
 .btn_longer:hover {
-  background-color: #FF4D01;
-  color: white;
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .btn_height_low {
@@ -683,4 +682,80 @@ body {
 }
 .contact_block .exit_shop svg:hover {
   fill: #FF4D01;
+}
+
+.trigger .trigger_inner {
+  font-weight: 400;
+}
+.trigger .tigger_img {
+  max-width: 100%;
+  position: absolute;
+}
+.trigger .trigger_content {
+  position: relative;
+  padding: 8.6% 45% 8.6% 10.5%;
+}
+.trigger .trigger_title {
+  font-size: 54px;
+  line-height: 115%;
+}
+.trigger .trigger_subtitle {
+  font-size: 18px;
+  line-height: 167%;
+  margin: 20px 0;
+}
+.trigger .btn {
+  width: 180px;
+  height: 75px;
+  margin-right: 20px;
+}
+.trigger .btn:hover {
+  border: 1px solid black;
+  color: black;
+}
+
+@media screen and (max-width: 1065px) {
+  .trigger .trigger_content {
+    padding: 8.6% 45% 8.6% 10.5%;
+  }
+  .trigger .trigger_title {
+    font-size: 4vw;
+  }
+  .trigger .trigger_subtitle {
+    font-size: 1.3vw;
+    margin: 1.88vw 0;
+  }
+  .trigger .btn {
+    font-size: 1.5vw;
+    width: 16.9vw;
+    height: 7.04vw;
+    margin-right: 1.88vw;
+  }
+  .trigger .btn:hover {
+    border: 1px solid black;
+    color: black;
+  }
+}
+@media screen and (max-width: 800px) {
+  .trigger .trigger_content {
+    padding: 6% 45% 8.6% 10.5%;
+  }
+  .trigger .trigger_title {
+    font-size: 4vw;
+  }
+  .trigger .trigger_subtitle {
+    font-size: 2vw;
+    margin: 1.88vw 0;
+    font-weight: bold;
+  }
+  .trigger .btn {
+    font-size: 2vw;
+    width: 16.9vw;
+    height: 7.04vw;
+    margin-right: 1.88vw;
+  }
+  .trigger .btn:hover {
+    border: 1px solid black;
+    color: black;
+  }
 }

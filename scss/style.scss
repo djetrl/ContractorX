@@ -60,14 +60,15 @@ body{
 }
 .btn_longer {
   width:237px;
-  border:1px solid rgb(0, 0, 0);
-  color:rgb(0, 0, 0);
-  background:none;
+
+  color:white;
+  background-color: #FF4D01;
   font-size: 18px;
   line-height: 111%;
   &:hover{
-    background-color: #FF4D01;
-    color:white;
+
+    color:black;
+    border:1px solid rgb(0, 0, 0);
   }
 }
 .btn_height_low{
@@ -78,3 +79,4 @@ body{
 @import "_AboutUs.scss";
 @import "_OurServices.scss"; 
 @import "_invisble.scss";
+@import "_trigger.scss";
