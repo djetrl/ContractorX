@@ -7,29 +7,27 @@ const body = document.body;
 const cart_btn =document.querySelector('#card_item');
 const cart_table =document.querySelector('.shop_window');
 const card_icon_exit =document.querySelector('.exit_shop');
+
 const contact =document.querySelector('#contact');
+const btn_exit_contact = document.querySelector('.exit_Contact');
+const ContactMenu = document.querySelector('.ContactMenu');
+
+
 hamb.addEventListener('click', hambHandler);
 
+closeCard(cart_btn,  cart_table);
+closeCard(card_icon_exit,  cart_table);
 
-contact.addEventListener('click',function(){
-  let documents = '+85457546453';
-
-  documents.execCommand();
-});
-
-
-closeCard(cart_btn);
-closeCard(card_icon_exit);
-
-
+closeCard(btn_exit_contact,  ContactMenu);
+closeCard(contact,  ContactMenu);
 
 // func
-function closeCard(fil){
+function closeCard(btn, block_close){
   
-  fil.addEventListener('click', displayCard);
+  btn.addEventListener('click', displayCard);
   function displayCard(e){
   e.preventDefault();
-  cart_table.classList.toggle('visible');
+  block_close.classList.toggle('visible');
 
  }
 }

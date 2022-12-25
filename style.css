@@ -125,6 +125,9 @@ body {
 .navbar .nav_item:hover {
   background-color: #FF4D01;
 }
+.navbar #contact {
+  cursor: pointer;
+}
 .navbar #card_item {
   cursor: pointer;
 }
@@ -599,7 +602,7 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 75px;
+  top: 0;
   transition: all 0.5s ease;
   background-color: rgb(243, 239, 239);
   z-index: 10;
@@ -625,6 +628,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
 }
 .shop_window .shop_main_content tr td {
   font-size: 16px;
@@ -646,41 +650,52 @@ body {
   fill: #FF4D01;
 }
 
-.contact_block {
-  width: 25%;
-  height: 30%;
+.ContactMenu {
+  display: grid;
+  grid-auto-flow: column;
+  transition: all 0.5s ease;
+  transform: scaleY(0);
+  transform-origin: center center;
   position: fixed;
-  z-index: 1000;
-  background-color: aliceblue;
-  text-align: center;
+  z-index: 10000000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.contact_block .contact_block_title {
-  height: 15%;
+.ContactMenu.visible {
+  transform: scaleY(100%);
 }
-.contact_block .contact_block_item {
-  display: flex;
-  justify-content: space-between;
-}
-.contact_block .contact_block_item:nth-child(2) {
-  flex-flow: column;
-}
-.contact_block .cbt {
-  height: 50%;
-}
-.contact_block svg {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.ContactMenu .ContactMenu_inner {
+  background-color: white;
   align-self: center;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
 }
-.contact_block .exit_shop {
+.ContactMenu .Contact_number {
+  padding: 20px 30px;
+}
+.ContactMenu .Contact_Email {
+  padding: 20px 30px;
+}
+.ContactMenu .Social_icon_container {
+  padding: 20px 0;
+}
+.ContactMenu .icon_social {
+  width: 30px;
+  height: 30px;
+}
+.ContactMenu .exit_Contact {
+  float: right;
   align-self: center;
   cursor: pointer;
 }
-.contact_block .exit_shop svg {
+.ContactMenu .exit_Contact svg {
+  width: 30px;
+  height: 30px;
   transition: all 0.4s;
 }
-.contact_block .exit_shop svg:hover {
+.ContactMenu .exit_Contact svg:hover {
   fill: #FF4D01;
 }
 
@@ -758,4 +773,15 @@ body {
     border: 1px solid black;
     color: black;
   }
+}
+.WhyChooseUs .WhyChooseUs_inner {
+  position: relative;
+}
+.WhyChooseUs .WhyChooseUs_block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 100px;
+}
+.WhyChooseUs .WhyChooseUs_bg_container {
+  position: absolute;
 }
