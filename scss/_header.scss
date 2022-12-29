@@ -123,15 +123,12 @@ li{
   .navbar {
     position: fixed;
     .navbar_wrap{
-    
       float: none;
       background-color:#FF4D01;
     }
   .hamb {
-
     display: flex;
     align-items:center;
-
   }
   .hamb_field {
     padding: 10px 20px;
@@ -146,10 +143,19 @@ li{
     transition: 0.2s;
   }
   .menu {
-  
     display: none;
-  
   }
+    .menu_container{
+      .btn_small{
+        &:hover{
+          background-color:#ff834f;
+
+        }
+      }
+
+    }
+
+
   }
   .popup {
     display: block;
@@ -161,10 +167,7 @@ li{
     background-color:#fff;
     z-index: 100 ;
     transition: 0.3s;
-    
-
     menu{overflow: auto;}
-
   }
   .open{
     left: 0;
@@ -172,6 +175,20 @@ li{
   body.noscroll{
     overflow: hidden;
   }
+  
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:450px) {
+  .navbar{
+    .menu_container{
+      .nav_item{
+        font-size: 3.5vw;
+        margin: 0 8px;
+      }
+      .btn_small{
+        font-size: 3.5vw;
+        margin: 0;
+      }
+    }
+
+  }
 }

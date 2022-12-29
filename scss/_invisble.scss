@@ -63,14 +63,13 @@ svg{
   .ContactMenu {
 
     &.visible{
-      transform: scaleY(100%);
+      transform: translateX(0);
     }
 
     display: grid;
     grid-auto-flow: column;
     transition: all 0.5s ease;
-    transform: scaleY(0);
-    transform-origin: center center;
+    transform: translateX(-100%);
     position: fixed;
     z-index: 10000000;
     width: 100%;

@@ -106,6 +106,9 @@
         grid-template-columns: 1fr 1fr ;
         gap: 6vw 1.5vw;
       }
+      .OurServices_item{
+        text-align: center;
+      }
     }
     .OurServices_subgroup {
       &:nth-child(2){

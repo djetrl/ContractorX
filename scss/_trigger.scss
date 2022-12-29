@@ -1,30 +1,28 @@
 .trigger {
-
+  font-size: 54px;
 .trigger_inner {
   font-weight: 400;
 }
-.tigger_img {
-  max-width: 100%;
-  position: absolute;
+.container{
+  background: url(img/Trigger/Trigger_bg.png) no-repeat  center;
+  
 }
 .trigger_content {
-  position: relative;
   padding: 8.6% 45% 8.6% 10.5%;
 }
 .trigger_title {
-  font-size: 54px;
+  font-size: 1em;
   line-height: 115%;
 }
 .trigger_subtitle {
-  font-size: 18px;
+  font-size: 0.333em;
   line-height: 167%;
-  margin: 20px 0;
-}
-.trigger_btns {
+  margin: 0.37em 0;
 }
 .btn {
   width: 180px;
   height: 75px;
+  font-size: 0.296em;
   margin-right: 20px;
   &:hover{
     border:1px solid black;
@@ -38,26 +36,19 @@
 
 @media screen and (max-width:1065px) {
   .trigger {
-    .tigger_img {
 
-
-    }
+    font-size: 45px;
     .trigger_content {
-      padding: 8.6% 45% 8.6% 10.5%;
+      padding: 8% 45% 8% 10%;
     }
-    .trigger_title {
-      font-size: 4vw;
-    }
+
     .trigger_subtitle {
-      font-size: 1.3vw;
-      margin: 1.88vw 0;
-    }
-    .trigger_btns {
+      margin: 2vw 0;
     }
     .btn {
       font-size: 1.5vw;
-      width: 16.90vw;
-      height: 7.04vw;
+      width: 17vw;
+      height: 7vw;
       margin-right: 1.88vw;
       &:hover{
         border:1px solid black;
@@ -69,28 +60,20 @@
 }
 @media screen and (max-width:800px) {
   .trigger {
-    .tigger_img {
 
-
-    }
+    font-size: 6.5vw;
     .trigger_content {
 
-      padding: 6% 45% 8.6% 10.5%;
-    }
-    .trigger_title {
-      font-size: 4vw;
+      padding: 6% 20% 8% 10%;
     }
     .trigger_subtitle {
-      font-size: 2vw;
-      margin: 1.88vw 0;
-      font-weight: bold;
-    }
-    .trigger_btns {
+      margin: 2vw 0;
     }
     .btn {
-      font-size: 2vw;
-      width: 16.90vw;
-      height: 7.04vw;
+
+      width: 17vw;
+      height: 7vw;
+      font-size: 0.3em;
       margin-right: 1.88vw;
       &:hover{
         border:1px solid black;
@@ -99,8 +82,4 @@
     }
     
     }
-}
-
-@media screen and (max-width:381px) {
- 
 }

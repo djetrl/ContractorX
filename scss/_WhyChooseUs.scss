@@ -1,40 +1,107 @@
 .WhyChooseUs {
   .WhyChooseUs_inner {
     position:relative;
+    font-size: 54px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 2.963em;
   }
   .WhyChooseUs_block {
+    padding-top: 1.852em;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     grid-column-gap: 100px;
+    &:nth-child(1){
+      padding-top: 5em;
+    }
+
   }
   .WhyChooseUs_bg_container{
     position:absolute;
+    background: url(img/WhyChooseUs/BG.png) no-repeat center top;
+    width: 100%;
+    height: 100%;
   }
   .WhyChooseUs_block_group {
   }
   .WhyChooseUs_block_img {
-  }
-  .WhyChooseUs_blocK_group {
+    max-width: 100%;
   }
   .WhyChooseUs_partition {
-  }
-  .partition {
+    font-size: 0.37em;
+    line-height: 110%;
   }
   .WhyChooseUs_Title {
+    font-size: 1em;
+    line-height: 115%;
   }
   .WhyChooseUs_SubTitle {
+    font-size: 0.333em;
+    line-height: 167%;
+    padding:1em 0;
   }
   .WhyChooseUs_link {
+    font-size: 0.333em;
+    line-height: 111%;
+    list-style-type: none;
+    li{
+      &::before{
+        content: "✓ ";
+        color:#FF4D01;
+      }
+    }
   }
   .WhyChooseUs_Date_Container {
-  }
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
   .WhyChooseUs_Date_item {
+      .WhyChooseUs_Date_title {
+        font-size: 1em;
+        line-height: 115%;
+        span{
+          color:#FF4D01;
+        }
+      }
+      .WhyChooseUs_Date_subtitle {
+        font-size: 0.333em;
+        line-height: 111%;
+        color:#989899;
+      }
   }
-  .WhyChooseUs_Date_title {
-  }
-  .AboutUs_Date_subtitle {
-  }
-  .WhyChooseUs_Date_subtitle {
-  }
+}
+}
 
+@media screen and (max-width:1065px) {
+  .WhyChooseUs {
+    .WhyChooseUs_inner {
+      font-size: 2vw;
+    }
+  }
+}
+@media screen and (max-width:800px) {
+  .WhyChooseUs {
+    .WhyChooseUs_inner {
+      font-size: 5vw;
+      text-align: center;
+    }
+    .WhyChooseUs_block{
+      grid-template-columns: 1fr;
+      &:nth-child(1){
+        padding-top: 4em;
+      }
+    }
+    .WhyChooseUs_block_img{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width:400px) {
+  .WhyChooseUs {
+    .WhyChooseUs_inner {
+      font-size: 7vw;
+      padding: 0 1em;
+    }
+  }
 }

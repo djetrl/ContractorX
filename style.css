@@ -26,7 +26,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 111%;
   width: 169px;
   height: 75px;
   cursor: pointer;
@@ -204,6 +204,9 @@ body {
   .navbar .menu {
     display: none;
   }
+  .navbar .menu_container .btn_small:hover {
+    background-color: #ff834f;
+  }
   .popup {
     display: block;
     position: fixed;
@@ -223,6 +226,16 @@ body {
   }
   body.noscroll {
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar .menu_container .nav_item {
+    font-size: 3.5vw;
+    margin: 0 8px;
+  }
+  .navbar .menu_container .btn_small {
+    font-size: 3.5vw;
+    margin: 0;
   }
 }
 .intro {
@@ -398,6 +411,9 @@ body {
     display: block;
     text-align: center;
   }
+  .AboutUs .AboutUs_Group:nth-child(1) img {
+    display: none;
+  }
   .AboutUs .AboutUs_Group:nth-child(1), .AboutUs .AboutUs_Group:nth-child(2) {
     width: 100%;
     padding: 0;
@@ -531,6 +547,9 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 6vw 1.5vw;
   }
+  .OurServices .OurServices_group .OurServices_item {
+    text-align: center;
+  }
   .OurServices .OurServices_subgroup:nth-child(2) {
     display: block;
     text-align: center;
@@ -654,8 +673,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   transition: all 0.5s ease;
-  transform: scaleY(0);
-  transform-origin: center center;
+  transform: translateX(-100%);
   position: fixed;
   z-index: 10000000;
   width: 100%;
@@ -663,7 +681,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .ContactMenu.visible {
-  transform: scaleY(100%);
+  transform: translateX(0);
 }
 .ContactMenu .ContactMenu_inner {
   background-color: white;
@@ -699,29 +717,31 @@ body {
   fill: #FF4D01;
 }
 
+.trigger {
+  font-size: 54px;
+}
 .trigger .trigger_inner {
   font-weight: 400;
 }
-.trigger .tigger_img {
-  max-width: 100%;
-  position: absolute;
+.trigger .container {
+  background: url(img/Trigger/Trigger_bg.png) no-repeat center;
 }
 .trigger .trigger_content {
-  position: relative;
   padding: 8.6% 45% 8.6% 10.5%;
 }
 .trigger .trigger_title {
-  font-size: 54px;
+  font-size: 1em;
   line-height: 115%;
 }
 .trigger .trigger_subtitle {
-  font-size: 18px;
+  font-size: 0.333em;
   line-height: 167%;
-  margin: 20px 0;
+  margin: 0.37em 0;
 }
 .trigger .btn {
   width: 180px;
   height: 75px;
+  font-size: 0.296em;
   margin-right: 20px;
 }
 .trigger .btn:hover {
@@ -730,20 +750,19 @@ body {
 }
 
 @media screen and (max-width: 1065px) {
-  .trigger .trigger_content {
-    padding: 8.6% 45% 8.6% 10.5%;
+  .trigger {
+    font-size: 45px;
   }
-  .trigger .trigger_title {
-    font-size: 4vw;
+  .trigger .trigger_content {
+    padding: 8% 45% 8% 10%;
   }
   .trigger .trigger_subtitle {
-    font-size: 1.3vw;
-    margin: 1.88vw 0;
+    margin: 2vw 0;
   }
   .trigger .btn {
     font-size: 1.5vw;
-    width: 16.9vw;
-    height: 7.04vw;
+    width: 17vw;
+    height: 7vw;
     margin-right: 1.88vw;
   }
   .trigger .btn:hover {
@@ -752,21 +771,19 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
-  .trigger .trigger_content {
-    padding: 6% 45% 8.6% 10.5%;
+  .trigger {
+    font-size: 6.5vw;
   }
-  .trigger .trigger_title {
-    font-size: 4vw;
+  .trigger .trigger_content {
+    padding: 6% 20% 8% 10%;
   }
   .trigger .trigger_subtitle {
-    font-size: 2vw;
-    margin: 1.88vw 0;
-    font-weight: bold;
+    margin: 2vw 0;
   }
   .trigger .btn {
-    font-size: 2vw;
-    width: 16.9vw;
-    height: 7.04vw;
+    width: 17vw;
+    height: 7vw;
+    font-size: 0.3em;
     margin-right: 1.88vw;
   }
   .trigger .btn:hover {
@@ -776,12 +793,195 @@ body {
 }
 .WhyChooseUs .WhyChooseUs_inner {
   position: relative;
+  font-size: 54px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 2.963em;
 }
 .WhyChooseUs .WhyChooseUs_block {
+  padding-top: 1.852em;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 2fr;
   grid-column-gap: 100px;
+}
+.WhyChooseUs .WhyChooseUs_block:nth-child(1) {
+  padding-top: 5em;
 }
 .WhyChooseUs .WhyChooseUs_bg_container {
   position: absolute;
+  background: url(img/WhyChooseUs/BG.png) no-repeat center top;
+  width: 100%;
+  height: 100%;
+}
+.WhyChooseUs .WhyChooseUs_block_img {
+  max-width: 100%;
+}
+.WhyChooseUs .WhyChooseUs_partition {
+  font-size: 0.37em;
+  line-height: 110%;
+}
+.WhyChooseUs .WhyChooseUs_Title {
+  font-size: 1em;
+  line-height: 115%;
+}
+.WhyChooseUs .WhyChooseUs_SubTitle {
+  font-size: 0.333em;
+  line-height: 167%;
+  padding: 1em 0;
+}
+.WhyChooseUs .WhyChooseUs_link {
+  font-size: 0.333em;
+  line-height: 111%;
+  list-style-type: none;
+}
+.WhyChooseUs .WhyChooseUs_link li::before {
+  content: "✓ ";
+  color: #FF4D01;
+}
+.WhyChooseUs .WhyChooseUs_Date_Container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.WhyChooseUs .WhyChooseUs_Date_Container .WhyChooseUs_Date_item .WhyChooseUs_Date_title {
+  font-size: 1em;
+  line-height: 115%;
+}
+.WhyChooseUs .WhyChooseUs_Date_Container .WhyChooseUs_Date_item .WhyChooseUs_Date_title span {
+  color: #FF4D01;
+}
+.WhyChooseUs .WhyChooseUs_Date_Container .WhyChooseUs_Date_item .WhyChooseUs_Date_subtitle {
+  font-size: 0.333em;
+  line-height: 111%;
+  color: #989899;
+}
+
+@media screen and (max-width: 1065px) {
+  .WhyChooseUs .WhyChooseUs_inner {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .WhyChooseUs .WhyChooseUs_inner {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .WhyChooseUs .WhyChooseUs_block {
+    grid-template-columns: 1fr;
+  }
+  .WhyChooseUs .WhyChooseUs_block:nth-child(1) {
+    padding-top: 4em;
+  }
+  .WhyChooseUs .WhyChooseUs_block_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .WhyChooseUs .WhyChooseUs_inner {
+    font-size: 7vw;
+    padding: 0 1em;
+  }
+}
+.PastProjects .PastProjects_inner {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  padding: 0 1.1em;
+}
+.PastProjects .PastProjects_group {
+  margin-top: 1.481em;
+}
+.PastProjects .PastProjects_item:nth-child(2) {
+  display: flex;
+}
+.PastProjects .partition {
+  font-size: 0.37em;
+  line-height: 110%;
+}
+.PastProjects .PastProjects_title {
+  font-size: 1em;
+  line-height: 115%;
+  margin-right: 3em;
+}
+.PastProjects .PastProjects_btns {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.PastProjects .PastProjects_btns .btn {
+  margin-right: 28px;
+}
+.PastProjects .PastProjects_btns .btn:hover {
+  border: 1px solid black;
+  color: black;
+}
+.PastProjects .PastProject_slider_container {
+  overflow: hidden;
+}
+.PastProjects .slider-track {
+  display: flex;
+  transition: 0.2s;
+  transform: translateX(0px);
+}
+.PastProjects .slider-item {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.PastProjects .slider-item img {
+  width: 90%;
+  height: 90%;
+}
+.PastProjects .slider_buttons {
+  text-align: center;
+}
+.PastProjects .slider_buttons .btn {
+  width: 72px;
+  height: 72px;
+}
+.PastProjects .slider_buttons .btn:hover {
+  border: 1px solid black;
+  color: black;
+}
+.PastProjects .content_slider_PastProjects {
+  position: absolute;
+  color: white;
+  padding: 40% 7% 0 8%;
+}
+.PastProjects .content_slider_PastProjects .content_slider_PastProjects_title {
+  font-size: 0.756em;
+  line-height: 141%;
+  margin-bottom: 0.471em;
+}
+.PastProjects .content_slider_PastProjects .content_slider_PastProjects_subtitle {
+  font-size: 0.4em;
+  line-height: 167%;
+  padding-bottom: 1em;
+}
+.PastProjects .content_slider_PastProjects .content_slider_PastProjects_name {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #989899;
+  font-size: 0.4em;
+  line-height: 111%;
+  padding-top: 1.4em;
+}
+.PastProjects .content_slider_PastProjects .content_slider_PastProjects_name img {
+  margin-right: 0.556em;
+  width: 29px;
+  height: 29px;
+}
+@media screen and (max-width: 800px) {
+  .PastProjects .PastProjects_inner {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .PastProjects .PastProjects_inner {
+    padding: 0;
+  }
 }

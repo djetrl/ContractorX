@@ -111,6 +111,11 @@ font-weight: 400;
 
     }
     .AboutUs_Group {
+      &:nth-child(1){
+        img{
+          display: none;
+        }
+      }
       &:nth-child(1),&:nth-child(2){
         width: 100%;
         padding:0;
