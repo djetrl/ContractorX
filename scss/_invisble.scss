@@ -66,8 +66,8 @@ svg{
       transform: translateX(0);
     }
 
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+
     transition: all 0.5s ease;
     transform: translateX(-100%);
     position: fixed;
@@ -76,32 +76,64 @@ svg{
     height: 100%;
     background-color:rgba(0,0,0,.7);
 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+
   .ContactMenu_inner {
     background-color:white;
     align-self:center;
     text-align: center;
-    width: 40%;
+    // width: 40%;
     margin: 0 auto;
 
   }
   .Contact_number {
-    padding: 20px 30px ;
+    font-size: 30px;
+    margin:  20px 30px;
+
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+      background-color:rgba(0,0,0,.3)
+    }
   }
   .Contact_Email {
-    padding: 20px 30px ;
+    font-size: 30px;
+    margin:  20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+      background-color:rgba(0,0,0,.3)
+    }
   }
   .Social_icon_container {
-    padding: 20px 0 ;
+    display: flex;
+    gap: 0.3em;
+    width: 100%;
+    height: 5em;
+    transition: all .7s ease;
+    padding: 0.4em;
+    box-sizing: border-box;
   }
-  .Instagram {
+  .social_icon {
+    width: 2em;
+    height:auto;
+    padding: 20px;
+    background-color: #FF4D01;
+    svg{
+      fill: wheat;
+      width: 2em;
+      height: 2em;
+    }
   }
-  .icon_social {
-    width: 30px;
-    height: 30px;
+  #vk {
   }
-  .vk {
+  #telegram {
   }
-  .telegram {
+  #instagram {
+  }
+  #youtube{
   }
 
   .exit_Contact{

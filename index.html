@@ -10,16 +10,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,200;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="icon" href="img/construction_helmet.png" type="image/x-icon">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 <body>
   <!-- svg -->
   <svg display="none">
       <symbol viewBox="0 0 512 512" id="cansel">
-><g class="st2" id="layer"><g class="st0"><line class="st1" x1="169.449" x2="342.551" y1="169.449" y2="342.551"/><line class="st1" x1="342.551" x2="169.449" y1="169.449" y2="342.551"/></g><g class="st0"><path d="M256,59c26.602,0,52.399,5.207,76.677,15.475c23.456,9.921,44.526,24.128,62.623,42.225    c18.098,18.098,32.304,39.167,42.226,62.624C447.794,203.601,453,229.398,453,256c0,26.602-5.206,52.399-15.475,76.677    c-9.922,23.456-24.128,44.526-42.226,62.623c-18.097,18.098-39.167,32.304-62.623,42.226C308.399,447.794,282.602,453,256,453    c-26.602,0-52.399-5.206-76.676-15.475c-23.457-9.922-44.526-24.128-62.624-42.226c-18.097-18.097-32.304-39.167-42.225-62.623    C64.207,308.399,59,282.602,59,256c0-26.602,5.207-52.399,15.475-76.676c9.921-23.457,24.128-44.526,42.225-62.624    c18.098-18.097,39.167-32.304,62.624-42.225C203.601,64.207,229.398,59,256,59 M256,43C138.363,43,43,138.363,43,256    s95.363,213,213,213s213-95.363,213-213S373.637,43,256,43L256,43z"/></g></g><g id="expanded"><g><path d="M267.314,256l80.894-80.894c3.124-3.124,3.124-8.189,0-11.313c-3.125-3.124-8.189-3.124-11.314,0L256,244.686    l-80.894-80.894c-3.124-3.124-8.189-3.124-11.313,0c-3.125,3.124-3.125,8.189,0,11.313L244.686,256l-80.894,80.894    c-3.125,3.125-3.125,8.189,0,11.314c1.562,1.562,3.609,2.343,5.657,2.343s4.095-0.781,5.657-2.343L256,267.314l80.894,80.894    c1.563,1.562,3.609,2.343,5.657,2.343s4.095-0.781,5.657-2.343c3.124-3.125,3.124-8.189,0-11.314L267.314,256z"/><path d="M256,59c26.602,0,52.399,5.207,76.677,15.475c23.456,9.921,44.526,24.128,62.623,42.225    c18.098,18.098,32.304,39.167,42.226,62.624C447.794,203.601,453,229.398,453,256c0,26.602-5.206,52.399-15.475,76.677    c-9.922,23.456-24.128,44.526-42.226,62.623c-18.097,18.098-39.167,32.304-62.623,42.226C308.399,447.794,282.602,453,256,453    c-26.602,0-52.399-5.206-76.676-15.475c-23.457-9.922-44.526-24.128-62.624-42.226c-18.097-18.097-32.304-39.167-42.225-62.623    C64.207,308.399,59,282.602,59,256c0-26.602,5.207-52.399,15.475-76.676c9.921-23.457,24.128-44.526,42.225-62.624    c18.098-18.097,39.167-32.304,62.624-42.225C203.601,64.207,229.398,59,256,59 M256,43C138.363,43,43,138.363,43,256    s95.363,213,213,213s213-95.363,213-213S373.637,43,256,43L256,43z"/></g></g>
+        <g class="st2" id="layer"><g class="st0"><line class="st1" x1="169.449" x2="342.551" y1="169.449" y2="342.551"/><line class="st1" x1="342.551" x2="169.449" y1="169.449" y2="342.551"/></g><g class="st0"><path d="M256,59c26.602,0,52.399,5.207,76.677,15.475c23.456,9.921,44.526,24.128,62.623,42.225    c18.098,18.098,32.304,39.167,42.226,62.624C447.794,203.601,453,229.398,453,256c0,26.602-5.206,52.399-15.475,76.677    c-9.922,23.456-24.128,44.526-42.226,62.623c-18.097,18.098-39.167,32.304-62.623,42.226C308.399,447.794,282.602,453,256,453    c-26.602,0-52.399-5.206-76.676-15.475c-23.457-9.922-44.526-24.128-62.624-42.226c-18.097-18.097-32.304-39.167-42.225-62.623    C64.207,308.399,59,282.602,59,256c0-26.602,5.207-52.399,15.475-76.676c9.921-23.457,24.128-44.526,42.225-62.624    c18.098-18.097,39.167-32.304,62.624-42.225C203.601,64.207,229.398,59,256,59 M256,43C138.363,43,43,138.363,43,256    s95.363,213,213,213s213-95.363,213-213S373.637,43,256,43L256,43z"/></g></g><g id="expanded"><g><path d="M267.314,256l80.894-80.894c3.124-3.124,3.124-8.189,0-11.313c-3.125-3.124-8.189-3.124-11.314,0L256,244.686    l-80.894-80.894c-3.124-3.124-8.189-3.124-11.313,0c-3.125,3.124-3.125,8.189,0,11.313L244.686,256l-80.894,80.894    c-3.125,3.125-3.125,8.189,0,11.314c1.562,1.562,3.609,2.343,5.657,2.343s4.095-0.781,5.657-2.343L256,267.314l80.894,80.894    c1.563,1.562,3.609,2.343,5.657,2.343s4.095-0.781,5.657-2.343c3.124-3.125,3.124-8.189,0-11.314L267.314,256z"/><path d="M256,59c26.602,0,52.399,5.207,76.677,15.475c23.456,9.921,44.526,24.128,62.623,42.225    c18.098,18.098,32.304,39.167,42.226,62.624C447.794,203.601,453,229.398,453,256c0,26.602-5.206,52.399-15.475,76.677    c-9.922,23.456-24.128,44.526-42.226,62.623c-18.097,18.098-39.167,32.304-62.623,42.226C308.399,447.794,282.602,453,256,453    c-26.602,0-52.399-5.206-76.676-15.475c-23.457-9.922-44.526-24.128-62.624-42.226c-18.097-18.097-32.304-39.167-42.225-62.623    C64.207,308.399,59,282.602,59,256c0-26.602,5.207-52.399,15.475-76.676c9.921-23.457,24.128-44.526,42.225-62.624    c18.098-18.097,39.167-32.304,62.624-42.225C203.601,64.207,229.398,59,256,59 M256,43C138.363,43,43,138.363,43,256    s95.363,213,213,213s213-95.363,213-213S373.637,43,256,43L256,43z"/></g></g>
     </symbol>
   </svg>
 
+  <svg display="none">
+    <symbol viewBox="0 0 512 512" id="instagram">
+      <g><path d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"/><path d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"/><path d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"/></g>
+  </symbol>
+</svg>
 
+<svg display="none">
+  <symbol viewBox="0 0 512 512" id="telegram">
+    <g><path d="M470.4354553,45.4225006L16.8273029,221.2490387c-18.253809,8.1874695-24.4278889,24.5854034-4.4127407,33.4840851l116.3710175,37.1726685l281.3674316-174.789505c15.3625488-10.9733887,31.0910339-8.0470886,17.5573425,4.023468L186.0532227,341.074646l-7.5913849,93.0762329c7.0313721,14.3716125,19.9055786,14.4378967,28.1172485,7.2952881l66.8582916-63.5891418l114.5050659,86.1867065c26.5942688,15.8265076,41.0652466,5.6130371,46.7870789-23.3935242L509.835083,83.1804428C517.6329956,47.474514,504.3345032,31.7425518,470.4354553,45.4225006z"/></g>
+</symbol>
+</svg>
+
+<svg display="none">
+  <symbol viewBox="0 0 14 14" id="vk">
+    <g> <path d="m 6.850117,10.385227 0.7185041,0 c 0,0 0.2165012,-0.0235 0.3270018,-0.142 0.1050006,-0.110501 0.1050006,-0.3150022 0.1050006,-0.3150022 0,0 -0.0155,-0.963506 0.4345025,-1.105007 0.4435025,-0.1405 1.0060057,0.930006 1.605509,1.3415082 0.458003,0.314502 0.802505,0.247001 0.802505,0.247001 l 1.605508,-0.022 c 0,0 0.841005,-0.0525 0.443503,-0.7130042 -0.0305,-0.0525 -0.225501,-0.487502 -1.185507,-1.380008 -1.006005,-0.930505 -0.871004,-0.780504 0.338002,-2.393513 0.734504,-0.982506 1.035006,-1.583009 0.937505,-1.838011 -0.083,-0.240001 -0.630003,-0.180501 -0.630003,-0.180501 l -1.80101,0.0155 c 0,0 -0.135001,-0.0155 -0.232501,0.045 -0.0975,0.0595 -0.157001,0.195501 -0.157001,0.195501 0,0 -0.2860018,0.764504 -0.668004,1.410008 -0.8115046,1.364509 -1.1340064,1.439509 -1.2615072,1.349509 -0.3020017,-0.195502 -0.2245012,-0.790005 -0.2245012,-1.216007 0,-1.320508 0.2020011,-1.875011 -0.3905022,-2.017512 -0.1950012,-0.0455 -0.340502,-0.075 -0.8425048,-0.083 -0.6450037,-0.007 -1.1890068,0.005 -1.4975085,0.155501 -0.2025012,0.1015 -0.3600021,0.326001 -0.2695016,0.337501 0.1200007,0.015 0.3895022,0.073 0.532003,0.268502 0.1875011,0.253001 0.1795011,0.818005 0.1795011,0.818005 0,0 0.1055006,1.558009 -0.2470014,1.75151 -0.2475014,0.131 -0.5775033,-0.140001 -1.2975074,-1.378008 -0.3675021,-0.630004 -0.6455037,-1.335008 -0.6455037,-1.335008 0,0 -0.0525,-0.128001 -0.1495008,-0.203001 -0.1135007,-0.0825 -0.2785016,-0.112501 -0.2785016,-0.112501 l -1.7175097,0.015 c 0,0 -0.2550015,0.008 -0.344502,0.120001 -0.0830004,0.0975 -0.008,0.307502 -0.008,0.307502 0,0 1.3430076,3.143518 2.8660162,4.726527 C 5.292108,10.506228 6.875117,10.412727 6.875117,10.412727 l -0.025,-0.0275 z"/></g>
+</symbol>
+</svg>
+<svg display="none">
+  <symbol viewBox="0 0 512 512" id="youtube">
+    <g> <path d="M260.4,449c-57.1-1.8-111.4-3.2-165.7-5.3c-11.7-0.5-23.6-2.3-35-5c-21.4-5-36.2-17.9-43.8-39c-6.1-17-8.3-34.5-9.9-52.3   C2.5,305.6,2.5,263.8,4.2,222c1-23.6,1.6-47.4,7.9-70.3c3.8-13.7,8.4-27.1,19.5-37c11.7-10.5,25.4-16.8,41-17.5   c42.8-2.1,85.5-4.7,128.3-5.1c57.6-0.6,115.3,0.2,172.9,1.3c24.9,0.5,50,1.8,74.7,5c22.6,3,39.5,15.6,48.5,37.6   c6.9,16.9,9.5,34.6,11,52.6c3.9,45.1,4,90.2,1.8,135.3c-1.1,22.9-2.2,45.9-8.7,68.2c-7.4,25.6-23.1,42.5-49.3,48.3   c-10.2,2.2-20.8,3-31.2,3.4C366.2,445.7,311.9,447.4,260.4,449z M205.1,335.3c45.6-23.6,90.7-47,136.7-70.9   c-45.9-24-91-47.5-136.7-71.4C205.1,240.7,205.1,287.6,205.1,335.3z"/></g>
+</symbol>
+</svg>
 
   <!-- block invisble -->
   <div class="shop_window">
@@ -47,9 +70,10 @@
       <div class="Contact_number">+792332959394</div>
       <div class="Contact_Email">leshadjet@mail.ru</div>
       <div class="Social_icon_container">
-        <img src="https://e7.pngegg.com/pngimages/30/500/png-clipart-computer-icons-social-media-youtube-instagram-social-media-purple-violet.png" alt="Instagram"  class="Instagram icon_social">
-        <img src="https://scanlike.com/wp-content/uploads/2021/05/trafik-dlja-vkontakte-uvelichit-poseshhaemost-stranicy-vk.png" alt="vk" class="vk icon_social">
-        <img src="https://pnggrid.com/wp-content/uploads/2021/04/square-telegram.png" alt="telegram" class="telegram icon_social">
+        <a href="" class="social_icon"><svg>  <use xlink:href="#instagram"></use> </svg></a>
+        <a href="" class="social_icon"><svg>  <use xlink:href="#telegram"></use> </svg></a>
+        <a href="" class="social_icon"><svg>  <use xlink:href="#vk"></use> </svg></a>
+        <a href="" class="social_icon"><svg>  <use xlink:href="#youtube"></use> </svg></a>
       </div>
     </div>
   </div>
@@ -280,81 +304,249 @@
         </div>
       </div>
       <div class="PastProjects_group">
-        <div class="PastProject_slider_container">
-          <div class="slider-track">
+        <div class="PastProject_slider_container ">
             <div class="slider-item"><img src="img/PastProject/IMAGE1.png" alt="">
-            <div class="content_slider_PastProjects">
-                <div class="content_slider_PastProjects_title">Building construction in Los Angeles, CA</div>
-                <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
-                <div class="content_slider_PastProjects_name">
-                  <img src="img/PastProject/Group.png" alt="">
-                  Construction</div>
+              <div class="content_slider_PastProjects">
+                  <div class="content_slider_PastProjects_title">1Building construction in Los Angeles, CA</div>
+                  <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
+                  <div class="content_slider_PastProjects_name"><img src="img/PastProject/Group.png" alt="">Construction</div>
+              </div>
             </div>
-            
-            </div>
+
             <div class="slider-item"><img src="img/PastProject/IMAGE2.png" alt="">
               <div class="content_slider_PastProjects">
-                  <div class="content_slider_PastProjects_title">Building construction in Los Angeles, CA</div>
+                  <div class="content_slider_PastProjects_title">2Kitchen remodeling in Hollywood Hills, CA</div>
                   <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
                   <div class="content_slider_PastProjects_name">
-                    <img src="img/PastProject/Group.png" alt="">
-                    Construction</div>
+                  <img src="img/PastProject/Group.png" alt="">Remodeling</div>
               </div>
-              
               </div>
+
               <div class="slider-item"><img src="img/PastProject/IMAGE3.png" alt="">
-                <div class="content_slider_PastProjects">
-                    <div class="content_slider_PastProjects_title">Building construction in Los Angeles, CA</div>
-                    <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
-                    <div class="content_slider_PastProjects_name">
-                      <img src="img/PastProject/Group.png" alt="">
-                      Construction</div>
-                </div>
-                
-                </div>
-                <div class="slider-item"><img src="img/PastProject/IMAGE1.png" alt="">
                   <div class="content_slider_PastProjects">
-                      <div class="content_slider_PastProjects_title">Building construction in Los Angeles, CA</div>
+                      <div class="content_slider_PastProjects_title">3Office remodeling in Hollywood Hills, CA</div>
                       <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
                       <div class="content_slider_PastProjects_name">
-                        <img src="img/PastProject/Group.png" alt="">
-                        Construction</div>
+                        <img src="img/PastProject/Group.png" alt=""> Remodeling</div>
+                  </div>
+                </div>
+
+                <div class="slider-item"><img src="img/PastProject/IMAGE1.png" alt="">
+                  <div class="content_slider_PastProjects">
+                      <div class="content_slider_PastProjects_title">4Building construction in Los Angeles, CA</div>
+                      <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
+                      <div class="content_slider_PastProjects_name">
+                        <img src="img/PastProject/Group.png" alt=""> Construction</div>
+                  </div>
                   </div>
                   
-                  </div>
                   <div class="slider-item"><img src="img/PastProject/IMAGE2.png" alt="">
                     <div class="content_slider_PastProjects">
-                        <div class="content_slider_PastProjects_title">Building construction in Los Angeles, CA</div>
+                        <div class="content_slider_PastProjects_title">5Building construction in Los Angeles, CA</div>
                         <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
                         <div class="content_slider_PastProjects_name">
-                          <img src="img/PastProject/Group.png" alt="">
-                          Construction</div>
+                          <img src="img/PastProject/Group.png" alt="">Construction</div>
+                    </div>      
                     </div>
-                    
-                    </div>
+
                     <div class="slider-item"><img src="img/PastProject/IMAGE3.png" alt="">
                       <div class="content_slider_PastProjects">
-                          <div class="content_slider_PastProjects_title">Building construction in Los Angeles, CA</div>
+                          <div class="content_slider_PastProjects_title">6Building construction in Los Angeles, CA</div>
                           <div class="content_slider_PastProjects_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus aenean sit elementum pellentesque ultrices sem.</div>
                           <div class="content_slider_PastProjects_name">
-                            <img src="img/PastProject/Group.png" alt="">
-                            Construction</div>
-                      </div>
-                      
-                      </div>
-                      
+                            <img src="img/PastProject/Group.png" alt=""> Construction</div>
+                      </div>               
           </div>
-        </div>
-        <div class="slider_buttons">
-          <button class="btn btn-prev">prev</button>
-          <button class="btn btn-next">Next</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- Testimonials -->
+<div class="Testimonials">
+  <div class="container">
+    <div class="Testimonials_inner">
+      <div class="Testimonials_group">
+        <div class="Testimonials_item">
+          <div class="partition">/Testimonials</div>
+        </div>
+        <div class="Testimonials_item">
+          <div class="Testimonials_title">What our clients say about us and our work</div>
+        </div>
+      </div>
+      <div class="Testimonials_group">
+        <div class="Testimonials_slider">
+          <div class="Testimonials_slider_item">
+            <img class="Testimonials_img " src="img/Testimonials/IMAGE1.png">
+            <div class="Testimonials_content">
+              <div class="Testimonials_slider_title">“A true team of expert contractors”</div>
+              <div class="Testimonials_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis senectus non dui vel tortor. Justo lectus integer arcu elit.</div>
+              <div class="Testimonials_autor">
+                  <div class="Testimonials_autor_name">John Carter</div>
+                  <div class="Testimonials_autor_domicile">Malibu beach, CA</div>
+              </div>
+            </div>
+          </div>
+          <div class="Testimonials_slider_item">
+            <img class="Testimonials_img" src="img/Testimonials/IMAGE2.png">
+            <div class="Testimonials_content">
+              <div class="Testimonials_slider_title">“A true team of expert contractors”</div>
+              <div class="Testimonials_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis senectus non dui vel tortor. Justo lectus integer arcu elit.</div>
+              <div class="Testimonials_autor">
+                  <div class="Testimonials_autor_name">John Carter</div>
+                  <div class="Testimonials_autor_domicile">Malibu beach, CA</div>
+              </div>
+            </div>
+          </div>
+          <div class="Testimonials_slider_item">
+            <img class="Testimonials_img" src="img/Testimonials/IMAGE1.png">
+            <div class="Testimonials_content">
+              <div class="Testimonials_slider_title">“A true team of expert contractors”</div>
+              <div class="Testimonials_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis senectus non dui vel tortor. Justo lectus integer arcu elit.</div>
+              <div class="Testimonials_autor">
+                  <div class="Testimonials_autor_name">John Carter</div>
+                  <div class="Testimonials_autor_domicile">Malibu beach, CA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Blog -->
+<div class="Blog">
+  <div class="container">
+    <div class="Blog_inner">
+      <div class="Blog_group">
+        <div class="Blog_header_item">
+          <div class="partition">/Testimonials</div>
+        </div>
+        <div class="Blog_header_item">
+          <div class="Blog_title">Articles & News</div>
+          <button class="btn">Browse articles</button>
+        </div>
+      </div>
+      <div class="Blog_group" id="Blog_group_slider">
+        <div class="Blog_group_item Blog_group_item_large">
+            <img src="img/blog/IMAGE1.png" alt="img">
+            <div class="blog_item_content"> 
+            <div class="Blog_group_item_title">12 designers tricks for picking the perfect home color palette</div>
+              <div class="Blog_group_date_container">
+                <div class="Blog_group_date"><p class="month">June</p><p class="day"></p><p class="year">2022</p></div>
+              </div>
+            </div>
+        </div>
+
+        <div class="Blog_group_item Blog_group_item_small">
+          <img src="img/blog/IMAGE2.png" alt="img">
+          <div class="blog_item_content"> 
+          <div class="Blog_group_item_title">Paint trends 2022 - the 17 colors you need for the ultimate wonder walls</div>
+            <div class="Blog_group_date_container">
+              <div class="Blog_group_date"><p class="month">June</p><p class="day"></p><p class="year">2022</p></div>
+            </div>
+          </div>
+      </div>
+
+      <div class="Blog_group_item Blog_group_item_small">
+        <img src="img/blog/IMAGE4.png" alt="img">
+        <div class="blog_item_content"> 
+        <div class="Blog_group_item_title">Clever DIY home improvements you can do during the pandemic</div>
+          <div class="Blog_group_date_container">
+            <div class="Blog_group_date"><p class="month">June</p><p class="day"></p><p class="year">2022</p></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="Blog_group_item Blog_group_item_small">
+      <img src="img/blog/IMAGE3.png" alt="img">
+      <div class="blog_item_content"> 
+        <div class="Blog_group_item_title">15 mind blowing floor designs to make your home look great</div>
+        <div class="Blog_group_date_container">
+          <div class="Blog_group_date"><p class="month">June</p><p class="day"></p><p class="year">2022</p></div>
+        </div>
+      </div>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer_inner">
+        <div class="footer_group">
+          <div class="footer_item">
+            <p class="contact_item">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            <div class="Social_icon_container">
+              <a href="" class="social_icon"><svg>  <use xlink:href="#instagram"></use> </svg></a>
+              <a href="" class="social_icon"><svg>  <use xlink:href="#telegram"></use> </svg></a>
+              <a href="" class="social_icon"><svg>  <use xlink:href="#vk"></use> </svg></a>
+              <a href="" class="social_icon"><svg>  <use xlink:href="#youtube"></use> </svg></a>
+            </div>
+          </div>
+
+          <div class="footer_item">
+            <h2>Menu</h2>
+            <div class="content_container">
+              <div class="content_container_item">
+                <a href="" class="content_container_link">Home</a>
+                <a href="" class="content_container_link">Blog</a>
+                <a href="" class="content_container_link">Blog Post</a>
+                <a href="" class="content_container_link">Services</a>
+                <a href="" class="content_container_link">Services Singe</a>
+              </div>
+              <div class="content_container_item">
+                <a href="" class="content_container_link">Shop</a>
+                <a href="" class="content_container_link">Shop Single</a>
+                <a href="" class="content_container_link">Projects</a>
+                <a href="" class="content_container_link">Projects Single</a>
+                <a href="" class="content_container_link">Contact</a>
+              </div>
+          </div>
+          </div>
+
+          <div class="footer_item">
+            <h2>Utility Pages</h2>
+            <div class="content_container">
+              <a href="" class="content_container_link">Start Here</a>
+              <a href="" class="content_container_link">Password Protected</a>
+              <a href="" class="content_container_link">404 Not Found</a>
+              <a href="" class="content_container_link">Licenses</a>
+              <a href="" class="content_container_link">Styleguide</a>
+              <a href="" class="content_container_link">Changelog</a>
+              <a href="" class="content_container_link">More Webflow Templates</a>
+            </div>
+          </div>
+          <div class="footer_item">
+            <h2>Contact us</h2>
+            <div class="content_container">
+              <div href="" class="content_container_contact">
+                <img src="img/footer/Email.png" alt="">
+                <div class="content_container_contact_text">
+                  <p>Call us</p>
+                  <p>(323) 238-0682</p>
+                </div>
+              </div>
+              <div href="" class="content_container_contact">
+                <img src="img/footer/Email.png" alt="">
+                <div class="content_container_contact_text">
+                  <p>Email us</p>
+                  <p>info@contractor.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_group">
+          <p id="copyright">Copyright © Contractor X</p>
+          <p id="contact_for_developer">Designed by <a href="">#########</a>|Powered by <a href="">#####</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src='slick/slick.min.js'></script>
   <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>

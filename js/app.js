@@ -11,7 +11,7 @@ const card_icon_exit =document.querySelector('.exit_shop');
 const contact =document.querySelector('#contact');
 const btn_exit_contact = document.querySelector('.exit_Contact');
 const ContactMenu = document.querySelector('.ContactMenu');
-
+const BlogSlider = document.querySelector('#Blog_group_slider')
 
 hamb.addEventListener('click', hambHandler);
 
@@ -41,6 +41,49 @@ function hambHandler(e){
 }
 function renderPopup(){
   popup.appendChild(menu);
-}
+};
 
-
+$(function(){
+  $('.PastProject_slider_container').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
+    dots: true,
+    responsive:[
+      {
+	      breakpoint: 801,
+	      settings: {
+          dots: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+	      }
+	    },
+	    {
+	      breakpoint: 500,
+	      settings: {
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+	      }
+      },
+    ]
+  })
+  $('.Testimonials_slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive:[
+      {
+	      breakpoint: 801,
+	      settings: {
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll:1,
+          arrows: false,
+	      }
+	    },
+    ]
+  })
+})
