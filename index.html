@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" > 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,9 +66,12 @@
 
   <div class="ContactMenu">
     <div class="ContactMenu_inner">
-      <div class="exit_Contact"><svg>  <use xlink:href="#cansel"></use> </svg></div>
-      <div class="Contact_number">+792332959394</div>
-      <div class="Contact_Email">leshadjet@mail.ru</div>
+      <div class="exit_Contact" ><svg>  <use xlink:href="#cansel"></use> </svg></div>
+      <div class="conatact_container">
+        <div class="out"></div>
+        <div class="Contact_number need_copy" >(323) 238-0682</div>
+        <div class="Contact_Email need_copy" >INFO@CONTRACTOR.COM</div>
+     </div>
       <div class="Social_icon_container">
         <a href="" class="social_icon"><svg>  <use xlink:href="#instagram"></use> </svg></a>
         <a href="" class="social_icon"><svg>  <use xlink:href="#telegram"></use> </svg></a>
@@ -94,14 +97,14 @@
               </div>
               <div class="menu_container">
               <ul class="menu" id="menu">
-                <li><a href="#" class="nav_item">Home</a></li>
-                <li><a href="#" class="nav_item">About</a></li>
-                <li><a href="#" class="nav_item">Blog</a></li>
-                <li><a href="#" class="nav_item">Pages</a></li>
+                <li><a href="#intro" class="nav_item">Home</a></li>
+                <li><a href="#AboutUs" class="nav_item">About</a></li>
+                <li><a href="#Blog" class="nav_item">Blog</a></li>
+                <li><a href="#footer" class="nav_item">Pages</a></li>
                 
 
               </ul>
-              <p class="nav_item" id="contact">Contact</p>
+              <p class="nav_item"  data-contact>Contact</p>
             <p class="nav_item " id="card_item">card (<b>0</b>)</p>
             <button class="btn btn_small">Get a quote </button>
           </div>
@@ -112,7 +115,7 @@
 
     
 
-    <div class="intro">
+    <div class="intro" id="intro">
       <div class="container">
           
          <div class="intro_inner">
@@ -131,7 +134,7 @@
     </div>
     </div>
 <!--AboutUs -->
-<div class="AboutUs">
+<div class="AboutUs" id="AboutUs">
   <div class="container">
     <div class="AboutUs_inner">
       <div class="AboutUs_Group"><img src="img/AboutUs/Group 1.png" alt="image_AboutUs"></div>
@@ -166,7 +169,7 @@
   </div>
 </div>
 <!-- Our Services -->
-<div class="OurServices">
+<div class="OurServices" id="OurServices">
   <div class="container">
     <div class="OurServices_inner">
       <div class="OurServices_group">
@@ -288,7 +291,7 @@
   </div>
 </div>
 <!-- Past Projects -->
-<div class="PastProjects">
+<div class="PastProjects" id="PastProjects">
   <div class="container">
     <div class="PastProjects_inner">
       <div class="PastProjects_group">
@@ -415,12 +418,12 @@
   </div>
 </div>
 <!-- /Blog -->
-<div class="Blog">
+<div class="Blog" id="Blog">
   <div class="container">
     <div class="Blog_inner">
       <div class="Blog_group">
         <div class="Blog_header_item">
-          <div class="partition">/Testimonials</div>
+          <div class="partition">/Blog</div>
         </div>
         <div class="Blog_header_item">
           <div class="Blog_title">Articles & News</div>
@@ -472,7 +475,7 @@
   </div>
 </div>
 <!-- footer -->
-  <div class="footer">
+  <div class="footer" id="footer">
     <div class="container">
       <div class="footer_inner">
         <div class="footer_group">
@@ -490,18 +493,18 @@
             <h2>Menu</h2>
             <div class="content_container">
               <div class="content_container_item">
-                <a href="" class="content_container_link">Home</a>
-                <a href="" class="content_container_link">Blog</a>
+                <a href="#intro" class="content_container_link">Home</a>
+                <a href="#Blog" class="content_container_link">Blog</a>
                 <a href="" class="content_container_link">Blog Post</a>
-                <a href="" class="content_container_link">Services</a>
+                <a href="OurServices" class="content_container_link">Services</a>
                 <a href="" class="content_container_link">Services Singe</a>
               </div>
               <div class="content_container_item">
                 <a href="" class="content_container_link">Shop</a>
                 <a href="" class="content_container_link">Shop Single</a>
-                <a href="" class="content_container_link">Projects</a>
+                <a href="PastProjects" class="content_container_link">Projects</a>
                 <a href="" class="content_container_link">Projects Single</a>
-                <a href="" class="content_container_link">Contact</a>
+                <a href="" class="content_container_link" data-contact>Contact</a>
               </div>
           </div>
           </div>
@@ -521,18 +524,19 @@
           <div class="footer_item">
             <h2>Contact us</h2>
             <div class="content_container">
+              <div class="out footer_contact_copy_out"></div>
               <div href="" class="content_container_contact">
                 <img src="img/footer/Email.png" alt="">
                 <div class="content_container_contact_text">
-                  <p>Call us</p>
-                  <p>(323) 238-0682</p>
+                  <p >Call us</p>
+                  <p class="need_copy" >(323) 238-0682</p>
                 </div>
               </div>
               <div href="" class="content_container_contact">
                 <img src="img/footer/Email.png" alt="">
                 <div class="content_container_contact_text">
-                  <p>Email us</p>
-                  <p>info@contractor.com</p>
+                  <p >Email us</p>
+                  <p class="need_copy">info@contractor.com</p>
                 </div>
               </div>
             </div>

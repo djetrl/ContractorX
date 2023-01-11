@@ -1,29 +1,73 @@
 
-const hamb = document.querySelector('#hamb');
-const popup = document.querySelector('#popup');
-const menu = document.querySelector('#menu').cloneNode(1);
-const body = document.body;
+const hamb = document.querySelector('#hamb'),
+      popup = document.querySelector('#popup'),
+      menu = document.querySelector('#menu').cloneNode(1),
+      body = document.body,
 
-const cart_btn =document.querySelector('#card_item');
-const cart_table =document.querySelector('.shop_window');
-const card_icon_exit =document.querySelector('.exit_shop');
+      cart_btn =document.querySelector('#card_item'),
+      cart_table =document.querySelector('.shop_window'),
+      card_icon_exit =document.querySelector('.exit_shop'),
 
-const contact =document.querySelector('#contact');
-const btn_exit_contact = document.querySelector('.exit_Contact');
-const ContactMenu = document.querySelector('.ContactMenu');
-const BlogSlider = document.querySelector('#Blog_group_slider')
+      contact =document.querySelectorAll('[data-contact]'),
+      btn_exit_contact = document.querySelector('.exit_Contact'),
+      ContactMenu = document.querySelector('.ContactMenu'),
+      BlogSlider = document.querySelector('#Blog_group_slider'),
+      Contact_out =  document.querySelector('.out'),
+      Contact_footer = document.querySelectorAll('.content_container_contact'),
+      contact_footer_out = document.querySelector('.footer_contact_copy_out'),
+      anchors = document.querySelectorAll('a[href*="#"]');
 
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    const blockID = anchor.getAttribute('href')
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
+  })
+}
 hamb.addEventListener('click', hambHandler);
+document.querySelector('.conatact_container').addEventListener('click',(event)=>{
+  const  elem = event.target;
+  if (elem.classList.contains('need_copy')){
+    navigator.clipboard.writeText(elem.textContent).then(()=>{
+      Contact_out .innerHTML +='copy<br>';
+      setTimeout(()=>{Contact_out .innerHTML =''; },600);
+    })
+    .catch(err =>{
+      console.log(err);
+    })
+  }
+});
+Contact_footer.forEach( (element) =>{
+  element.addEventListener('click',(event)=>{
+      const  elem = event.target;
+      if (elem.classList.contains('need_copy')){
+        navigator.clipboard.writeText(elem.textContent).then(()=>{
+          contact_footer_out.innerHTML +='copy<br>';
+          setTimeout(()=>{
+            contact_footer_out .innerHTML ='';
+          },600);
+        })
+        .catch(err =>{
+          console.log(err);
+        })
+      }
+    });
+  }
+)
 
 closeCard(cart_btn,  cart_table);
 closeCard(card_icon_exit,  cart_table);
-
 closeCard(btn_exit_contact,  ContactMenu);
-closeCard(contact,  ContactMenu);
+contact.forEach(btns =>{
+  closeCard(btns,  ContactMenu);
+});
 
 // func
+
 function closeCard(btn, block_close){
-  
   btn.addEventListener('click', displayCard);
   function displayCard(e){
   e.preventDefault();
@@ -43,6 +87,7 @@ function renderPopup(){
   popup.appendChild(menu);
 };
 
+//slider
 $(function(){
   $('.PastProject_slider_container').slick({
     infinite: true,
@@ -87,3 +132,4 @@ $(function(){
     ]
   })
 })
+

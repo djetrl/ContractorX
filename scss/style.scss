@@ -1,11 +1,12 @@
+html{
+  scroll-behavior: smooth;
 
+}
 body{
 	box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
   font-style: normal;
   font-weight: 400;
-
-
 }
 *,
 *:before,
@@ -20,7 +21,28 @@ body{
   
   
 }
-
+  .need_copy{
+    cursor: pointer;
+    transition: all .2s ease;
+    &:hover{
+      background-color:rgba(255, 255, 255, 0.4);
+    }
+  }
+  .out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 20%;
+    text-align: center;
+    border-radius:10px;
+    color:greenyellow;
+    position:fixed;
+    top: 30%; right: 50%;
+    transform: translate(50%,-50%);
+    z-index: 100;
+    font-size: 2em;
+  }
 .btn{
   background-color: #FF4D01;
   color: white;
@@ -74,6 +96,7 @@ body{
 .btn_height_low{
  height: 70px;
 }
+
 @import "_header.scss";
 @import "_intro.scss";
 @import "_AboutUs.scss";
