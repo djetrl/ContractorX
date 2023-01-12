@@ -14,19 +14,7 @@ const hamb = document.querySelector('#hamb'),
       BlogSlider = document.querySelector('#Blog_group_slider'),
       Contact_out =  document.querySelector('.out'),
       Contact_footer = document.querySelectorAll('.content_container_contact'),
-      contact_footer_out = document.querySelector('.footer_contact_copy_out'),
-      anchors = document.querySelectorAll('a[href*="#"]');
-
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    const blockID = anchor.getAttribute('href')
-    document.querySelector(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'center'
-    })
-  })
-}
+      contact_footer_out = document.querySelector('.footer_contact_copy_out');
 hamb.addEventListener('click', hambHandler);
 document.querySelector('.conatact_container').addEventListener('click',(event)=>{
   const  elem = event.target;
