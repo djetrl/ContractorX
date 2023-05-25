@@ -7,6 +7,7 @@ body{
   font-family: 'Barlow', sans-serif;
   font-style: normal;
   font-weight: 400;
+  overflow-x: hidden;
 }
 *,
 *:before,
@@ -17,7 +18,7 @@ body{
 .container{
   max-width:1440px;
   height: auto;
-  margin: auto;
+  margin: 0  auto;
   
   
 }

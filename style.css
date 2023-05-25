@@ -8,6 +8,7 @@ body {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 *,
@@ -20,7 +21,7 @@ body {
 .container {
   max-width: 1440px;
   height: auto;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .need_copy {
@@ -303,6 +304,17 @@ body {
   margin-left: 28px;
 }
 
+@media screen and (min-width: 1400px) {
+  .intro {
+    background-image: none;
+  }
+  .intro .container {
+    background-image: url(img/intro/intro_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 1065px) {
   .intro .title {
     padding-top: 17vw;
@@ -1405,6 +1417,14 @@ body {
   margin-bottom: 5%;
 }
 
+@media screen and (min-width: 1400px) {
+  .footer {
+    background-color: inherit;
+  }
+  .footer .container {
+    background-color: rgb(0, 0, 0);
+  }
+}
 @media screen and (max-width: 1280px) {
   .footer .footer_item:nth-child(2) .content_container .content_container_item:nth-child(2) {
     margin-left: 2vw;

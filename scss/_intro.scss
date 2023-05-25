@@ -40,7 +40,17 @@ font-size: 1em;
 }
 
 }
-@media screen and (min-width:1065px) {}
+@media screen and (min-width:1400px) {
+  .intro {
+    background-image: none;
+    .container{
+      background-image: url(img/intro/intro_img.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
     @media screen and (max-width:1065px) {
 
       .intro {
