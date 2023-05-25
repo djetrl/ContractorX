@@ -16,6 +16,7 @@
                          'large1 small2'
                          'large1 small3';
   }
+  grid-gap: 0.5em;
 }
 .Blog_header_item {
   &:nth-child(2){
